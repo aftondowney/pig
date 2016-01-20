@@ -1,13 +1,15 @@
-// var string = "afton"
+// var word = "afton"
  var ay = "ay"
 
-var pigLatin = function(string) {
-  // string = string.toLowerCase();
-  var first = string.charAt(0);
+var pigLatin = function(word) {
+  // word = word.toLowerCase();
+  var first = word.charAt(0);
 
   if (first === "a" || first === "e" || first === "i" || first === "o" || first === "u" ) {
-    return string.concat(ay);
-  };
-
-
-  };
+    return word.concat(ay);
+  } else {
+    word = word.substring(1);
+    // word = word + first;
+    return word + first + ay;
+  }
+};
