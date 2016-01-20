@@ -6,7 +6,8 @@ var pigLatin = function(string) {
   var first = string.charAt(0);
 
   if (first === "a" || first === "e" || first === "i" || first === "o" || first === "u" ) {
-    return true;
+    return string.concat(ay);
   };
 
-};
+
+  };
