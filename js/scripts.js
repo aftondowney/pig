@@ -9,7 +9,10 @@ var pigLatin = function(word) {
     return word.concat(ay);
   } else {
     word = word.substring(1);
-    // word = word + first;
     return word + first + ay;
   }
+};
+
+var splitString = function(string, separator) {
+  return string.split(" ");
 };
