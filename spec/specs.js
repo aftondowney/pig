@@ -4,8 +4,8 @@ describe('pigLatin', function() {
     expect(pigLatin("afton")).to.equal("aftonay");
   });
 
-  it("remove first letter if the first letter is not a vowel and put it at the end", function() {
-    expect(pigLatin("pig")).to.equal("igpay");
+  it("replace word with updated spliced word", function() {
+    expect(pigLatin("trash")).to.equal("ashtray");
   });
 });
 
@@ -15,3 +15,19 @@ describe('splitString', function() {
   expect(splitString("happy day")).to.eql(["happy", "day"]);
   });
 });
+
+// describe('findVowel', function() {
+//
+//   it("determine the position of the first vowel", function() {
+//     expect(findVowel("trash")).to.equal(2);
+//   });
+// });
+//
+// describe('consonants', function() {
+//
+//   // it("capture removed consonants in var cons", function() {
+//   //   expect(consonants("trash")).to.equal("tr");
+//   // });
+//
+//
+// });
