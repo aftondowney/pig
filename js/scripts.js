@@ -25,8 +25,14 @@ var pigLatin = function(word) {
 };
 
 
+$(document).ready(function() {
+  $("#text form").submit(function(event) {
+    $(".string").text(igpayAtinlay);
 
-
+  $("#result").show();
+  event.preventDefault();
+ });
+});
 // first === "a" || first === "e" || first === "i" || first === "o" || first === "u"
 
 // var findVowel = function(word) {

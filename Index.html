@@ -6,10 +6,27 @@
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Epicodus Wiki</title>
+    <title>Pig Latin Translator</title>
   </head>
-  
+
   <body>
-    
+    <div class="container">
+      <h1>Enter some text to translate!</h1>
+      <div id="text">
+        <form>
+          <div class="form-group">
+            <label for="string">Enter Text</label>
+            <input id="string" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn">Translate!</button>
+        </form>
+      </div>
+
+      <div id="result">
+        <p></p>
+      </div>
+
+    </div>
   </body>
 </html>
