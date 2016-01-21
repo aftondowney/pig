@@ -12,7 +12,7 @@ describe('pigLatin', function() {
 describe('splitString', function() {
 
   it("split string that has more than one word into an array", function() {
-  expect(splitString("happy day")).to.eql(["happy", "day"]);
+  expect(splitString("happy day")).to.equal("appyhay ayday");
   });
 });
 

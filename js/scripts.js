@@ -1,12 +1,17 @@
 // var word = "afton"
 var ay = "ay"
-var wordArray =  string.split(" ");
-// var splitString = function(string, separator) {
-//
-//    return wordArray;
-//  };
 
-var pigLatin = function(wordArray.forEach(function(word) {
+var splitString = function(string, separator) {
+   var wordArray =  string.split(" ");
+   var newWordArray = [];
+   wordArray.forEach(function(word) {
+     var newWord = pigLatin(word);
+     newWordArray.push(newWord);
+   });
+   var igpayAtinlay = newWordArray.join(" ");
+ };
+
+var pigLatin = function(word) {
 
   var vowel = word.search(/([aeiouAEIOU]+)/g);
 
@@ -17,7 +22,10 @@ var pigLatin = function(wordArray.forEach(function(word) {
      word = word.slice(vowel);
      return word + cons + ay;
   }
-}));
+};
+
+
+
 
 // first === "a" || first === "e" || first === "i" || first === "o" || first === "u"
 
